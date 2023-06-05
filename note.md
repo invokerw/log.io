@@ -1,5 +1,5 @@
 
-
+### init
 cd server/
 
 执行
@@ -28,5 +28,13 @@ cd ./input/file
 然后执行
 ```
 npm run build
+```
+### dev
+```
+// regist
+echo -ne '+input|stream|source1|hello\x00' | nc localhost 6689
+
+// send msg
+echo -ne '+msg|stream|source1|hello\x00' | nc localhost 6689
 ```
 
